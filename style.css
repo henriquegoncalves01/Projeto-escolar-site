@@ -30,24 +30,32 @@ body{
     top: 0;
     z-index: 2;
 }
+
+#icone{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: var(--cor3);
+}
+
 nav > a{
     text-decoration: none;
-    color: rgb(51, 51, 51);
+    color: var(--destaque1);
     font-weight: bold;
     padding: 5px;
+    border-radius: 10px;
     transition: background-color 0.1s, padding 0.1s;
 }
 nav > a:hover{
     background-color: #325824;
     padding: 10px;
-    border-radius: 10px;
 }
 
 #inicio-h1{
     position: absolute;
     z-index: 1;
-    left: 30vw;
-    right: 50vw;
+    left: 20%;
+    right: 50%;
     margin-top: 20px;
     color: var(--destaque1);
     text-shadow: 0px 1px 1px var(--destaque2);
@@ -60,7 +68,7 @@ nav > a:hover{
     position: absolute;
     z-index: 1;
     top: 50%;
-    right: 10%;
+    right:30%;
     transform: translateY(-40%);
     width: 45%;
     font-size: 1.3em;
@@ -73,7 +81,7 @@ nav > a:hover{
     position: relative;
     z-index: 0;
     top:90px ;
-    right: 30%;
+    right: 20%;
     background: var(--cor3);
     width: 700px;
     height: 700px;
@@ -86,16 +94,17 @@ nav > a:hover{
     text-shadow: 0px 1px 1px var(--destaque2);
     margin-top: 30px ;
     position: absolute;
-    left: 70%;
-    right: 30%;
+    left: 80%;
+    right: 10%;
     font-size: 3em;
 }
 
 #meio-p{
     position: absolute;
     z-index: 1;
-    margin-top: 35%;
-    right: 45%;
+    margin-top: 20%;
+    right: 40%;
+    left: 30%;
     transform: translateY(-40%);
     width: 40%;
     text-align: left;
@@ -107,7 +116,7 @@ nav > a:hover{
     position: relative;
     z-index: 0;
     top: 90px ;
-    left: 60%;
+    left: 80%;
     background: var(--cor1);
     width: 700px;
     height: 700px;
@@ -120,17 +129,17 @@ nav > a:hover{
     text-shadow: 0px 1px 1px var(--destaque2);
     margin-top: 30px ;
     position: absolute;
-    left: 30%;
-    right: 70%;
+    left: 10%;
+    right: 50%;
     font-size: 3em;
 }
 
  #fim-p{
         position: absolute;
     z-index: 1;
-    top: 280%;
-    right: 10%;
-    transform: translateY(-40%);
+    right: 30%;
+    margin-top: 10%;
+    transform: translateY(60%);
     width: 45%;
     font-size: 1.3em;
     line-height: 1.8em;
@@ -141,7 +150,7 @@ nav > a:hover{
     position: relative;
     z-index: 0;
     top: 90px ;
-    right: 30%;
+    right: 20%;
     background: var(--destaque2);
     width: 700px;
     height: 700px;
@@ -158,14 +167,25 @@ nav > a:hover{
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
 }
 
-@media (max-width:999px) {
+@media (max-width:1800px) and (min-width:900px) {
+    #inicio-p, #fim-p{
+        left: 40%;
+    }
+}
+
+@media (max-width:1200px) {
     #inicio-h1{
         left: 40px;
+    }
+     
+    #inicio-p{
+        right: 20%;
+        top: 40%;
     }
 
     #inicio-p,#fim-p{
         width: 50%;  
-        font-size: 17px;
+        font-size: 1.3em;
         line-height: 2em;
     }
 
@@ -175,9 +195,10 @@ nav > a:hover{
     }
 
     #meio-p{
-        top: 130%;
+        transform: translateY(15%);
+        left: 20%;
         width: 50%;
-        font-size: 17px;
+        font-size: 1.3em;
         line-height: 1.7em;
     }
 
@@ -187,13 +208,14 @@ nav > a:hover{
     }
 
     #fim-p{
-        top: 250%;
+        transform: translateY(30%);
+        left: 30%;
     }
 
    
     .forma,.forma3{
-        right: 50%;
-        width: 400px;
+        right: 30%;
+        width: 600px;
         height: 500px;
     }
  

@@ -38,17 +38,65 @@ body{
     background: var(--cor3);
 }
 
-nav > a{
+nav > button> a {
     text-decoration: none;
+    color: var(--destaque1); 
+}
+
+.link{ 
+    font-size:1.1em ;
+    background-color: var(--cor3);
     color: var(--destaque1);
+    border: none;
+    outline: none;
     font-weight: bold;
     padding: 5px;
     border-radius: 10px;
     transition: background-color 0.1s, padding 0.1s;
 }
-nav > a:hover{
+.link:hover{
     background-color: #325824;
     padding: 10px;
+}
+
+.popup {
+  display: none;
+  z-index: 3;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+}
+.popup-conteudo {
+  background: white;
+  width: 70%;
+  padding: 60px;
+  margin: 15% auto;
+  border-radius: 10px;
+}
+.popup-conteudo > h2{
+    padding: 10px 0px;
+    font-size: 1.5em;
+}
+
+.popup-conteudo > p{
+    margin: 10px 0px;
+    font-size: 1.2em;
+}
+#fecharBtn{
+    border: none;
+    background-color: var(--destaque1);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.452);
+    padding: 10px;
+    border-radius: 10px;
+}
+#fecharBtn:hover{
+    background-color: #49be28;
+}
+.popup.ativo {
+  display: block;
 }
 
 #inicio-h1{
@@ -94,7 +142,7 @@ nav > a:hover{
     text-shadow: 0px 1px 1px var(--destaque2);
     margin-top: 30px ;
     position: absolute;
-    left: 80%;
+    left: 70%;
     right: 10%;
     font-size: 3em;
 }
@@ -135,7 +183,7 @@ nav > a:hover{
 }
 
  #fim-p{
-        position: absolute;
+    position: absolute;
     z-index: 1;
     right: 30%;
     margin-top: 10%;
@@ -167,13 +215,16 @@ nav > a:hover{
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
 }
 
-@media (max-width:1800px) and (min-width:900px) {
+.forma,.forma2,.forma3{
+    transition: width 0.1s ,height .1s;
+}
+@media (max-width:1800px) {
     #inicio-p, #fim-p{
         left: 40%;
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:1200px)  {
     #inicio-h1{
         left: 40px;
     }
@@ -209,14 +260,49 @@ nav > a:hover{
 
     #fim-p{
         transform: translateY(30%);
-        left: 30%;
+        right: 20%;
     }
 
    
     .forma,.forma3{
         right: 30%;
-        width: 600px;
+        width: 550px;
         height: 500px;
     }
  
+}
+@media(max-width:705px){
+    .forma,.forma3{
+        right: 60%;
+    }
+
+    #inicio-p,#meio-p,#fim-p{
+        font-size: 1.2em;
+    }
+
+    #meio-p{
+        width: 60%;
+    }
+    #fim-h1{
+        margin-top: 45px;
+    }
+    #fim-p{
+        transform: translateY(15%);
+    }
+}
+
+@media (max-width:550px){
+    .forma,.forma3{
+        width: 400px;
+        height: 500px;
+    }
+    #inicio-p,#meio-p,#fim-p{
+        font-size: 1.1em;
+    }
+    #inicio-h1,#fim-h1{
+        left: 5%;
+    }
+    #inicio-h1,#meio-h1,#fim-h1{
+        font-size: 2.5em;
+    }
 }

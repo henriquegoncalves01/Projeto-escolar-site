@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Doações</title>
 </head>
 <body>
@@ -11,14 +12,25 @@
         
         <img src="laco-verde.png" alt="foto" id="icone">
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Saiba-mais</a>
-            <a href="#">Doação</a>
+           <button class="link"><a href="#">Home</a></button>
+           <button class="link"><a href="#">Saiba-mais</a></button>
+           <button class="link" id="abrirBtn">Doação</button>
         </nav>
     </section>
 
     <section id="main">
         
+    <div id="MeuPopup" class="popup">
+    <div class="popup-conteudo">
+    <h2>Onde doar?</h2>
+    <p>A doação de órgãos ocorre em hospitais autorizados, onde uma equipe especializada avalia o possível doador e acompanha todo o processo com segurança e respeito.</p>
+    <h2>Quais são os critérios para doar?</h2>
+    <p>A possibilidade de doação depende de uma avaliação médica. São considerados fatores como o estado de saúde do doador, as condições dos órgãos e tecidos e a causa da morte. Não existe uma idade única que determine quem pode ou não ser doador — cada caso é analisado individualmente.</p>
+    <p><strong>Doe esperança. Compartilhe sua vontade e ajude a salvar vidas.</strong></p>
+    <button id="fecharBtn">Fechar</button>
+    </div>
+    </div>
+
         <div class="intro">
             <h1 id="inicio-h1">Doe vida</h1>
             <p id="inicio-p">A doação de órgãos é um ato de solidariedade que pode transformar a vida de muitas pessoas. Para quem espera por um transplante, receber um órgão pode representar uma nova oportunidade de viver, realizar sonhos e estar ao lado da família.</p>

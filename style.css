@@ -35,6 +35,7 @@ body{
     position: relative;
     width: 50px;
     height: 50px;
+    border-radius: 10px;
     background: var(--cor3);
 }
 
@@ -73,7 +74,7 @@ nav > button> a {
   background: white;
   width: 70%;
   padding: 60px;
-  margin: 15% auto;
+  margin: 5% auto;
   border-radius: 10px;
 }
 .popup-conteudo > h2{
@@ -85,16 +86,19 @@ nav > button> a {
     margin: 10px 0px;
     font-size: 1.2em;
 }
-#fecharBtn{
+#fecharBtn, #saiba{
     border: none;
+    text-decoration: none;
+    outline: none;
     background-color: var(--destaque1);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.452);
     padding: 10px;
     border-radius: 10px;
 }
-#fecharBtn:hover{
+#fecharBtn:hover, #saiba:hover{
     background-color: #49be28;
 }
+
 .popup.ativo {
   display: block;
 }
@@ -214,7 +218,15 @@ nav > button> a {
     padding: 30px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
 }
-
+#footer>h1{
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+#footer> p{
+    line-height: 1.2em;
+    font-weight: lighter;
+    color: black;
+}
 .forma,.forma2,.forma3{
     transition: width 0.1s ,height .1s;
 }
@@ -289,9 +301,20 @@ nav > button> a {
     #fim-p{
         transform: translateY(15%);
     }
+    .popup{
+        position: sticky;
+    }
+    .popup-conteudo{
+        margin: 0% auto;
+        transform: translateY(-5%);
+        padding: 10%;
+    }
 }
 
 @media (max-width:550px){
+    body{
+        overflow-x: hidden;
+    }
     .forma,.forma3{
         width: 400px;
         height: 500px;
@@ -305,4 +328,13 @@ nav > button> a {
     #inicio-h1,#meio-h1,#fim-h1{
         font-size: 2.5em;
     }
+   .popup {
+    height: 100vh;
+    position: sticky;
+   }
+   .popup-conteudo > p{
+    margin: 3px;
+    font-size: 1.2em;
+
+   }
 }

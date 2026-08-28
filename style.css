@@ -25,7 +25,7 @@
             z-index: 3;
             width: 100px;
             height: 100px;
-            margin-top: 10%;
+            margin-top: 20%;
             align-self: flex-start;
             background: linear-gradient(to left,green,rgb(0, 61, 0));
             opacity: 0;
@@ -77,12 +77,13 @@
         .title{
             margin: 5%;
             font-size: 4em;
-            
+            font-family: Arial, Helvetica, sans-serif;
         }
             
 
          
         .p{
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 1.5em;
             margin: 5%;
             padding: 10px;
@@ -90,6 +91,8 @@
             background-color: white;
             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.466);
         }
+
+        
         
         .final{
             height: 100vh;
@@ -100,9 +103,10 @@
         }
 
         .campanha{
+            font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(190, 190, 190);
             width: 80%;
-            height: 80%;
+            height: 90%;
             border-radius: 15px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.404);
             opacity: 0;
@@ -116,7 +120,7 @@
         .campanha > p{
             margin: 5%;
             text-align: justify;
-            font-size: 1.1em;
+            font-size: 1.3em;
         }
 
         .btn{
@@ -141,9 +145,20 @@
         }
 
       
+        @media(min-width:1400px ){
+            .p{
+                height: 20%;
+                width: 60%;
+            }
+            #pqn{
+            height: 10%; 
+            }
+            .campanha{
+                height: 70%;
+            }
+        }
 
-
-     @media (max-width: 768px) {
+     @media (max-width: 700px) {
 
     .logo {
         font-size: 2.5em;
@@ -153,6 +168,7 @@
     .gota {
         width: 80px;
         height: 80px;
+        margin-top: 20%;
     }
 
     .title {
@@ -167,21 +183,31 @@
         max-width: 90%;
         padding: 10px;
     }
+    .campanha{
+        height: 90%;
+    }
 
     .campanha > h2{
           font-size: 2em;
         }
 
     .campanha > p{
-        font-size: 1em;
-    }
+        font-size: 1.2em;
+        text-align: none;
     }
 
-    @media (max-width: 480px) {
+    .btn{
+        margin-bottom: 0px;
+    }
+
+    }
+
+    @media (max-width: 450px) {
 
     .logo {
         font-size: 2em;
         margin: 10px;
+        margin-bottom: 20%;
     }
 
     .gota {
@@ -201,6 +227,9 @@
         max-width: 90%;
         padding: 10px;
         line-height: 1.5;
+    }
+    .campanha{
+        height: 70%;
     }
 
     .campanha > h2{

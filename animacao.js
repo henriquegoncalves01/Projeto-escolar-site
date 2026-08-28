@@ -1,4 +1,4 @@
- gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
  gsap.registerPlugin(SplitText);
  
 
@@ -9,7 +9,7 @@
     trigger: ".inicio",
     start: "top top",
     end: "+=1000",
-    scrub: .5,
+    scrub: 1,
     pin: true
   }
 });

@@ -3,67 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doe vida</title>
+    <script src="animacao.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Doações</title>
+    <link rel="shortcut icon" href="laco_verde_doacao_de_orgaos.ico" type="image/x-icon">
 </head>
 <body>
-    <section id="header">
+    <section class="inicio">
+        <div class="gota"></div>
+        <h1 class="logo">Doe vida,Doe chance,Doe esperança</h1>
         
-        <img src="laco-verde.png" alt="foto" id="icone">
-        <nav>
-           <button class="link"><a href="#">Home</a></button>
-           <button class="link" id="abrirBtn">Doação</button>
-        </nav>
     </section>
 
-    <section id="main">
-        
-    <div id="MeuPopup" class="popup">
-    <div class="popup-conteudo">
-    <h2>Onde doar?</h2>
-    <p>A doação de órgãos ocorre em hospitais autorizados, onde uma equipe especializada avalia o possível doador e acompanha todo o processo com segurança e respeito.</p>
-    <h2>Quais são os critérios para doar?</h2>
-    <p>A possibilidade de doação depende de uma avaliação médica. São considerados fatores como o estado de saúde do doador, as condições dos órgãos e tecidos e a causa da morte. Não existe uma idade única que determine quem pode ou não ser doador — cada caso é analisado individualmente.</p>
-    <p><strong>Doe esperança. Compartilhe sua vontade e ajude a salvar vidas.</strong></p>
-    <button id="fecharBtn">Fechar</button>
-    <button id="saiba"><a href="https://www.gov.br/saude/pt-br/composicao/saes/snt" target="_blank">Saiba-mais</a></button>
-    </div>
-    </div>
 
-        <div class="intro">
-            <h1 id="inicio-h1">Doe vida</h1>
-            <p id="inicio-p">A doação de órgãos é um ato de solidariedade que pode transformar a vida de muitas pessoas. Para quem espera por um transplante, receber um órgão pode representar uma nova oportunidade de viver, realizar sonhos e estar ao lado da família.</p>
-        </div>
-        <div class="forma">
-        </div>
-
+    <div class="horizontal">
+        <section id="one"
+        class="panel">
+        <h1 class="title">Doe vida</h1>
         
-        <div class="meio">
-            <h1 id="meio-h1">Nova chance</h1>
-            <p id="meio-p">Milhares de pessoas aguardam por um transplante e dependem da solidariedade de outras para terem uma nova chance. Órgãos como coração, fígado, rins e pulmões podem ser doados em determinadas circunstâncias e ajudar pacientes que enfrentam doenças graves.
+            <p class="p">A doação de órgãos é um ato de solidariedade que pode transformar a vida de muitas pessoas. Para quem espera por um transplante, receber um órgão pode representar uma nova oportunidade de viver, realizar sonhos e estar ao lado da família.</p>
+        </section>
+
+
+
+
+        <section id="two"
+        class="panel">
+        <h1 class="title">Doe chance</h1>
+            <p class="p">Milhares de pessoas aguardam por um transplante e dependem da solidariedade de outras para terem uma nova chance. Órgãos como coração, fígado, rins e pulmões podem ser doados em determinadas circunstâncias e ajudar pacientes que enfrentam doenças graves.
             
             Um dos passos mais importantes é conversar com a família sobre o desejo de ser um doador. No momento em que a doação é possível, a autorização familiar é fundamental. Por isso, falar sobre o assunto com antecedência pode fazer toda a diferença.
             </p>
-        </div>
-        <div class="forma2">
-        </div>
+        </section>
 
-        <div class="fim">
-            <h1 id="fim-h1">Oportunidade</h1>
-            <p id="fim-p">
+
+
+        <section id="tree"
+        class="panel">
+        <h1 class="title">Doe esperança</h1>
+         
+            <p class="p">
                 Doar órgãos é deixar esperança para quem precisa. É um gesto que pode transformar uma despedida em uma nova oportunidade para outras pessoas. Converse com sua família, informe sua vontade e ajude a espalhar essa ideia. A sua decisão pode salvar vidas.
             </p>
-        </div>
+        </section>
 
-        <div class="forma3">
-        </div>
 
+        <section id="four"
+        class="panel">
+        <h1 class="title">Seja um doador de órgãos.</h1>
+        
+        <p class="p">Sua decisão pode transformar a dor de uma perda em uma nova oportunidade de vida para alguém. Converse com sua família, informe sua vontade e ajude a espalhar essa mensagem. Doar órgãos é um ato de amor, solidariedade e esperança.</p>
+        </section>
+
+
+    </div>
+
+    <section class="final">
+        <div class="campanha">
+        <h2 >Onde doar?</h2>
+        <p>A doação de órgãos ocorre em hospitais autorizados, onde uma equipe especializada avalia o possível doador e acompanha todo o processo com segurança e respeito.</p>
+        <h2>Quais são os critérios para doar?</h2>
+        <p>A possibilidade de doação depende de uma avaliação médica. São considerados fatores como o estado de saúde do doador, as condições dos órgãos e tecidos e a causa da morte. Não existe uma idade única que determine quem pode ou não ser doador — cada caso é analisado individualmente.</p>
+
+        <button class="btn" ><a href="https://www.gov.br/saude/pt-br/composicao/saes/snt" target="_blank" >Saiba-mais</a></button>
+        </div>
     </section>
 
-    <section id="footer">
-        <h1>Doe vida. Seja um doador de órgãos.</h1>
-        <p>Sua decisão pode transformar a dor de uma perda em uma nova oportunidade de vida para alguém. Converse com sua família, informe sua vontade e ajude a espalhar essa mensagem. Doar órgãos é um ato de amor, solidariedade e esperança.</p>
-    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
 </body>
 </html>

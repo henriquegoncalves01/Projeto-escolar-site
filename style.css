@@ -207,12 +207,13 @@
     .logo {
         font-size: 2em;
         margin: 10px;
-        margin-bottom: 20%;
+        margin-bottom: 30%;
     }
 
     .gota {
         width: 60px;
         height: 60px;
+        margin-top: 30%;
     }
 
     .title {
